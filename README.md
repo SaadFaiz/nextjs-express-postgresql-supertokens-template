@@ -9,7 +9,7 @@ This template provides a production-ready authentication system using:
 
 ## Requirements
 1. Docker (for SuperTokens Core)
-2. Node.js v18+
+2. Node.js
 3. Google OAuth credentials
 
 ## Quick Start
