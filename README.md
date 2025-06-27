@@ -17,7 +17,7 @@ This template provides a production-ready authentication system using:
 1. **Start SuperTokens Core:**
 ```bash
 docker run -d -p 3567:3567 --name supertokens supertokens/supertokens-express
-
+```
 Install dependencies:
 
 npm install
