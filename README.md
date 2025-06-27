@@ -18,18 +18,20 @@ This template provides a production-ready authentication system using:
 ```bash
 docker run -d -p 3567:3567 --name supertokens supertokens/supertokens-express
 ```
-Install dependencies:
-
+2. **Install dependencies:**
+```
 npm install
+```
+3. **Run development servers:**
 
-Run development servers:
-
-# Start Express backend (port 5000)
+  1. Start Express backend (port 5000) :
+```
 node server.js
-
-# Start Next.js frontend (port 3000)
+```
+  2. Start Next.js frontend (port 3000) :
+``` 
 npm run dev
-
+```
 Access the application:
 
 http://localhost:3000
@@ -38,10 +40,10 @@ Configuration
 Get Google OAuth credentials from Google Cloud Console
 
 Add credentials to .env:
-
+```
 NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_client_id
 GOOGLE_CLIENT_SECRET=your_client_secret
-
+```
 Update provider config in config/superToken.js
 
 Technical Documentation
