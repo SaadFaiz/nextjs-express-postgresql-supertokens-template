@@ -1,16 +1,18 @@
 
-# SuperTokens Next.js + Express Starter Template
+# SuperTokens + PostgreSQL + Next.js + Express Starter Template
 
 This template provides a production-ready authentication system using:
 - Next.js (frontend)
 - Express.js (backend)
+- PostgreSQL (database)
 - SuperTokens (authentication)
 - Docker (for SuperTokens Core)
 
 ## Requirements
 1. Docker (for SuperTokens Core)
 2. Node.js
-3. Google OAuth credentials
+3. PostgreSQL
+4. Google OAuth credentials
 
 ## Quick Start
 1. **Create PostgreSQL database:**
