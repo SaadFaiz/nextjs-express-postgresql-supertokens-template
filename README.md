@@ -13,10 +13,24 @@ This template provides a production-ready authentication system using:
 3. Google OAuth credentials
 
 ## Quick Start
-
+1. **Create PostgreSQL database:**
+   ```bash
+    CREATE DATABASE < Your Database Name >;
+   ```
 1. **Start SuperTokens Core:**
+     
 ```bash
-docker run -d -p 3567:3567 --name supertokens supertokens/supertokens-express
+# IMPORTANT: If your PostgreSQL is hosted on your own machine and NOT in Docker, 
+# do NOT use "localhost" as POSTGRESQL_HOST — use host.docker.internal instead
+docker run -d -p 3567:3567 \
+  --name supertokens \
+  -e SUPERTOKENS_ENV=production \
+  -e POSTGRESQL_HOST=host.docker.internal \
+  -e POSTGRESQL_PORT=5432 \
+  -e POSTGRESQL_DATABASE_NAME=<Your Database Name> \
+  -e POSTGRESQL_USER=postgres \
+  -e POSTGRESQL_PASSWORD=<Your Password> \
+  supertokens/supertokens-express
 ```
 2. **Install dependencies:**
 ```
